@@ -16,14 +16,12 @@
 
     <tx:annotation-driven transaction-manager="transactionManager" />
 
-<!--
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${PROPERTY.jdbc.driver}" />
         <property name="url" value="${PROPERTY.jdbc.url}/${PROPERTY.jdbc.schema}" />
         <property name="username" value="${PROPERTY.jdbc.username}" />
         <property name="password" value="${PROPERTY.jdbc.password}" />
     </bean>
--->
 
   <!--  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -32,9 +30,9 @@
         <property name="password" value="root" />
     </bean>-->
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+   <!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close" p:driverClassName="com.mysql.jdbc.Driver"
-          p:url="jdbc:mysql://localhost:3306/proiectdb" p:username="root" p:password="root" />
+          p:url="jdbc:mysql://localhost:3306/proiectdb" p:username="root" p:password="root" />-->
 
 
     <!-- Declare a JPA entityManagerFactory-->
